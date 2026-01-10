@@ -1,0 +1,29 @@
+backend:
+  name: git-gateway
+  repo: Bryantlee7/entropysequence.com
+  branch: master
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/img"
+
+collections:
+  - name: "releases"
+    label: "Releases"
+    folder: "_releases"
+    create: true
+    fields:
+      - { label: "Album Title", name: "title", widget: "string" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Record Label", name: "label", widget: "string", required: false }
+      - { label: "Release Date", name: "date", widget: "datetime" }
+      - { label: "Compilation?", name: "compilation", widget: "boolean", default: false }
+      - { label: "Album Cover", name: "cover_image", widget: "image" }
+      - label: "Tracks"
+        name: "tracks"
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Link", name: "link", widget: "string", required: false }
+

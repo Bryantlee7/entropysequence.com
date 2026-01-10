@@ -1,0 +1,42 @@
+---
+layout: default
+title: Shows
+---
+
+{% assign upcoming_shows = site.data.shows.show_list | where_exp: "show", "show.date >= site.time" | reverse %}
+{% assign past_shows = site.data.shows.show_list | where_exp: "show", "show.date < site.time" %}
+
+{% if upcoming_shows.size > 0 %}
+  <header class="section-header">
+    <h2>Upcoming Shows</h2>
+  </header>
+
+  <ol class="show-list">
+  {% for show in upcoming_shows %}
+    <li class="clear">
+    {% if show.link %}
+      <a target="_blank" href="{{ show.link }}">{% include show.html %}</a>
+    {% else %}
+      {% include show.html %}
+    {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+{% endif %}
+
+<header class="section-header">
+  <h2>Past Shows</h2>
+</header>
+
+<ol class="show-list">
+{% for show in past_shows %}
+  <li class="clear">
+  {% if show.link %}
+    <a target="_blank" href="{{ show.link }}">{% include show.html %}</a>
+  {% else %}
+    {% include show.html %}
+  {% endif %}
+  </li>
+{% endfor %}
+</ol>
+

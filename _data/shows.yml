@@ -1,0 +1,5 @@
+show_list:
+  - date: 2026-10-24 19:00:00
+    title: "Test Future Show"
+  - date: 2025-10-24 19:00:00
+    title: "Test Past Show"
