@@ -11,7 +11,7 @@
     {% endif %}
     <a class="album-details" href="{{ record.link }}">
       {% if record.label %}{{ record.label | append: ", " }}{% endif %}
-      {{ record.date | date: "%Y" }}
+      {{ record.date | date: "%m-%d-%Y" }}
     </a>
     <ol class="track-listing">
     {% for track in record.tracks %}
