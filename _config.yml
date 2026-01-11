@@ -3,6 +3,10 @@ description:  Darkwave / Industrial Synthwave
 timezone:     America/Denver
 markdown:     kramdown
 
+intro_paragraph: |
+  Entropy Sequence is an experimental darkwave, downtempo synth-pop band exploring the slow collapse between rhythm and atmosphere. 
+  Blending shadowed synths, hypnotic beats, and emotionally charged textures, their sound drifts between tension and release.
+
 sass:
   sass_dir: _scss
 
