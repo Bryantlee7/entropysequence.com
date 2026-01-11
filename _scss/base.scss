@@ -8,7 +8,10 @@
 
 body {
   background-color: variables.$background-color;
-  background-image: url('/assets/img/dark-universe-background.png');
+  background-image: url('/assets/img/dark-universe-background.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   color: variables.$text-color;
   margin: 0;
   padding: 0;
