@@ -13,6 +13,17 @@
       {% if record.label %}{{ record.label | append: ", " }}{% endif %}
       {{ record.date | date: "%m-%d-%Y" }}
     </a>
+    {% if record.platforms_urls %}
+      <div class="music-platforms">
+        {% for platform_pair in record.platforms_urls %}
+          {% assign platform = platform_pair[0] %}
+          {% assign url = platform_pair[1] %}
+          <a href="{{ url }}" target="_blank" rel="noopener noreferrer">
+            {% include platform_icon.html platform=platform %}
+          </a>
+        {% endfor %}
+      </div>
+    {% endif %}
     <ol class="track-listing">
     {% for track in record.tracks %}
       {% if track.link %}
