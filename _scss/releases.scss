@@ -32,6 +32,17 @@
   text-decoration: underline;
 }
 
+.music-platforms {
+  margin-top: 5px;
+  .platform-icon {
+    border: 1px solid #AAA;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    margin-right: 2px;
+  }
+}
+
 @media (min-width: 600px) {
   .album-art,
   .album-info {
