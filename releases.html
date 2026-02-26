@@ -12,6 +12,8 @@ title: Releases
 
 <ol class="recording-list">
 {% for record in records %}
-  {% include record.html %}
+  {% if record.draft == false %}
+    {% include record.html %}
+  {% endif %}
 {% endfor %}
 </ol>
