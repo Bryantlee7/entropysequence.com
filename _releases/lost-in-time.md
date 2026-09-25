@@ -2,9 +2,10 @@
 title: Lost In Time
 link: https://distrokid.com/hyperfollow/entropysequence/lost-in-time-3
 label: EON002
+isrc: QZES62667155
 date: 2026-01-23
 compilation: false
-cover_image: /assets/img/releases/lost-in-time.jpg
+cover_image: /assets/img/releases/lost-in-time-cover.jpg
 platforms_urls:
   spotify: https://open.spotify.com/track/2onZNCLPx7TD7PPQZCyL7a
   apple: https://geo.music.apple.com/us/album/lost-in-time/1870812460?i=1870812461&app=music&ls=1
